@@ -1,0 +1,16 @@
+def swap_case(s):
+    s=list(s)
+    t=[]
+    u=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+    l=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+    for i in s:
+        if i in u:
+            x=u.index(i)
+            t.append(l[x])
+        elif i in l:
+            x=l.index(i)
+            t.append(u[x])
+        else:
+            t.append(i)
+    return "".join(t)
+    
